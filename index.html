@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO:START — the builder rewrites title / description / keywords for search (see CLAUDE.md) -->
+  <title>QR Code Reader from Image – Scan Screenshots Free, No Upload</title>
+  <meta name="description" content="Read a QR code from a screenshot, photo or your camera right in your browser. See the real link before opening it. Free, private, no upload, works offline.">
+  <meta name="keywords" content="qr code reader online, scan qr code from image, decode qr code from screenshot, read qr code from photo, qr code scanner online, what does this qr code say, qr code decoder, check qr code link">
+  <!-- SEO:END -->
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f6f7fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e0f14" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://turhe123.github.io/qr-code-reader-local/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="QR Code Reader from Image – Free, Private, In Your Browser">
+  <meta property="og:description" content="Drop a screenshot or photo and read the QR code inside it in your browser, or scan with your camera, no upload. Free and open source, nothing is uploaded, works">
+  <meta property="og:url" content="https://turhe123.github.io/qr-code-reader-local/">
+  <meta property="og:image" content="https://turhe123.github.io/qr-code-reader-local/docs/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="QR Code Reader from Image">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="QR Code Reader from Image – Free, Private, In Your Browser">
+  <meta name="twitter:description" content="Drop a screenshot or photo and read the QR code inside it in your browser, or scan with your camera, no upload. Free and open source, nothing is uploaded, works">
+  <meta name="twitter:image" content="https://turhe123.github.io/qr-code-reader-local/docs/og.png">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "QR Code Reader from Image",
+    "alternateName": "QR Code Reader from Image – Free, Private, In Your Browser",
+    "description": "Drop a screenshot or photo and read the QR code inside it in your browser, or scan with your camera, no upload. Free and open source, nothing is uploaded, works",
+    "url": "https://turhe123.github.io/qr-code-reader-local/",
+    "image": "https://turhe123.github.io/qr-code-reader-local/docs/og.png",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Any",
+    "browserRequirements": "Requires JavaScript. Works offline after the first visit.",
+    "isAccessibleForFree": true,
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "license": "https://opensource.org/licenses/MIT",
+    "softwareVersion": "1.0.0",
+    "author": { "@type": "Person", "name": "Or Davidai Bachar", "url": "https://github.com/turhe123" },
+    "sameAs": ["https://github.com/turhe123/qr-code-reader-local"]
+  }
+  </script>
+  <script src="vendor/jsqr/jsQR.js" defer></script>
+  <!-- Page views are counted with GoatCounter: no cookies, no personal data, open source. -->
+  <script data-goatcounter="https://turhe123.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#tool">Skip to the tool</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="./" aria-label="QR Code Reader from Image home">
+        <img class="brand__icon" src="icon.svg" alt="" width="28" height="28">
+        <span class="brand__name">QR Code Reader from Image</span>
+      </a>
+      <nav class="site-nav" aria-label="Page">
+        <a href="#how">How it works</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://github.com/turhe123/qr-code-reader-local" rel="noopener">GitHub</a>
+        <a href="https://turhe123.github.io/web-tools/" rel="noopener" class="site-nav__more">More tools</a>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container">
+      <!-- HERO:START — the builder may refine the headline and promise; keep the trust badges -->
+      <h1 class="hero__title">QR Code Reader from Image</h1>
+      <p class="hero__lead">Drop a screenshot or photo and read the QR code inside it in your browser, or scan with your camera, no upload.</p>
+      <!-- HERO:END -->
+      <ul class="badges" aria-label="Why this tool is safe to use">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v6c0 4 3 7 7 9 4-2 7-5 7-9V6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Runs in your browser, files never leave your device</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 16 0 8 8 0 0 0-16 0z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Free, open source, no account, no ads</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5 9.5 17 19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Works offline after the first visit</li>
+      </ul>
+    </section>
+
+    <section class="container" id="tool" aria-labelledby="tool-title">
+      <div class="tool-card">
+        <!-- TOOL:START — the builder replaces everything between these markers with the real tool UI -->
+        <h2 id="tool-title" class="visually-hidden">Read a QR code from an image</h2>
+        <div class="dropzone" id="dropzone" tabindex="0" role="button" aria-label="Choose an image with a QR code, or drop it here" aria-describedby="dropzone-hint">
+          <label class="visually-hidden" for="file-input">Choose an image with a QR code</label>
+          <input class="dropzone__input" id="file-input" type="file" accept="image/*,.heic,.heif" multiple tabindex="-1">
+          <svg class="dropzone__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M14 14h2v2h-2zM18 18h2v2h-2zM18 14h2M14 18v2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <p class="dropzone__title">Drop a screenshot or photo here or <span class="link">choose an image</span></p>
+          <p class="dropzone__hint" id="dropzone-hint">Or paste one with <kbd class="kbd">Ctrl</kbd>+<kbd class="kbd">V</kbd> (<kbd class="kbd">⌘</kbd>+<kbd class="kbd">V</kbd> on Mac). Images stay on this device; nothing is uploaded and nothing is saved.</p>
+        </div>
+        <div class="row qr-actions">
+          <button class="btn btn--primary" id="choose-btn" type="button">Choose image</button>
+          <button class="btn" id="paste-btn" type="button">Paste image</button>
+          <button class="btn" id="camera-btn" type="button" aria-controls="camera">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="13" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            Use camera
+          </button>
+          <p class="qr-note">Reads QR codes only, not product barcodes or Data Matrix. Links are never opened for you.</p>
+        </div>
+        <div class="qr-camera" id="camera" hidden>
+          <div class="preview qr-camera__view">
+            <video id="camera-video" muted playsinline aria-label="Live camera preview"></video>
+          </div>
+          <div class="row row--between">
+            <p class="qr-camera__status" id="camera-status" role="status">Point the camera at a QR code.</p>
+            <button class="btn btn--small" id="camera-stop" type="button">Stop camera</button>
+          </div>
+        </div>
+        <div class="qr-progress" id="progress" hidden>
+          <div class="progress" role="progressbar" aria-labelledby="progress-label" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
+          <p class="qr-progress__label" id="progress-label">Scanning…</p>
+        </div>
+        <div class="results" id="results" aria-live="polite"></div>
+        <!-- TOOL:END -->
+      </div>
+    </section>
+
+    <section class="container section" id="how" aria-labelledby="how-title">
+      <h2 id="how-title" class="section__title">How it works</h2>
+      <!-- HOW:START — three honest steps for this tool -->
+      <ol class="steps">
+        <li><strong>Add the picture.</strong> Drop a screenshot or photo, choose a file, paste with Ctrl+V or ⌘+V, or point your camera at the code.</li>
+        <li><strong>It is decoded on your device.</strong> The page scans the whole image, then tries enlarged, contrast-boosted and tiled copies to find small, inverted or several codes.</li>
+        <li><strong>Read before you open.</strong> You see the exact text, its type and the real domain with lookalike warnings. Copy it, or open a link only after you confirm.</li>
+      </ol>
+      <!-- HOW:END -->
+    </section>
+
+    <section class="container section" id="faq" aria-labelledby="faq-title">
+      <h2 id="faq-title" class="section__title">Questions, answered</h2>
+      <!-- FAQ:START — 4 to 6 questions; keep the privacy, offline and AI answers -->
+      <details class="faq" open>
+        <summary>Are my images uploaded anywhere?</summary>
+        <p>No. QR Code Reader from Image runs entirely in your browser. Your screenshots and photos are decoded in memory on your device and never sent to a server, and no history is kept. You can disconnect from the internet and it keeps working.</p>
+      </details>
+      <details class="faq">
+        <summary>Why doesn't it open the link straight away?</summary>
+        <p>QR codes are a popular way to hide phishing links. The tool shows the full address first, highlights the real domain and warns about lookalike characters, an "@" trick, raw IP addresses or a missing https. A link only opens after you click Open link and then confirm.</p>
+      </details>
+      <details class="faq">
+        <summary>It says no QR code was found. What can I try?</summary>
+        <p>Crop closer to the code, make sure the whole square including its corners is in the picture, increase contrast, and avoid glare or heavy blur. Only QR codes are supported; product barcodes, Data Matrix and Aztec codes are not. HEIC photos must be converted to JPG or PNG first.</p>
+      </details>
+      <details class="faq">
+        <summary>Is it really free?</summary>
+        <p>Yes. It is open source under the MIT license, with no account, no limits and no ads. If it saves you a paid subscription, you can say thanks on Ko-fi.</p>
+      </details>
+      <details class="faq">
+        <summary>Does it work offline?</summary>
+        <p>Yes. After your first visit the page is cached by a service worker, so it loads without a connection. You can also install it from your browser's menu as an app. The camera needs a secure (https) page.</p>
+      </details>
+      <details class="faq">
+        <summary>Was this written by AI?</summary>
+        <p>Yes. QR Code Reader from Image was generated by Claude Code from a written specification inside an automated pipeline, with a test suite that runs in a real browser. The full source is on GitHub, so you can read every line before you trust it with your files.</p>
+      </details>
+      <!-- FAQ:END -->
+    </section>
+
+    <section class="container section" id="support">
+      <div class="support-card">
+        <h2 class="section__title">Built by one person, given away for free</h2>
+        <p>QR Code Reader from Image is a free alternative to paid tools like ZXing Decoder Online, WebQR and online QR scanners. If it earns a place in your bookmarks, a coffee keeps the updates coming.</p>
+        <a class="btn btn--kofi" href="https://ko-fi.com/leodavidai" rel="noopener">☕ Support Or on Ko-fi</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="site-footer__links">
+        <a href="https://github.com/turhe123/qr-code-reader-local" rel="noopener">Source on GitHub</a> ·
+        <a href="https://github.com/turhe123/qr-code-reader-local/issues" rel="noopener">Report a bug</a> ·
+        <a href="https://turhe123.github.io/web-tools/" rel="noopener">More free web tools</a> ·
+        <a href="https://ko-fi.com/leodavidai" rel="noopener">Ko-fi</a>
+      </p>
+      <p class="site-footer__disclosure"><strong>Built with AI.</strong> QR Code Reader from Image was written by Claude Code inside an automated pipeline from a plain-English spec, as a clean-room implementation: no code or assets from any commercial product. It runs entirely in your browser, makes no network requests except an anonymous, cookieless page-view count, and has had less human review than hand-written software. Bug reports and pull requests are welcome.</p>
+      <p class="site-footer__copy">© 2026 Or Davidai Bachar · MIT License · <span id="sw-status" class="sw-status" aria-live="polite"></span></p>
+    </div>
+  </footer>
+
+  <script type="module" src="site.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

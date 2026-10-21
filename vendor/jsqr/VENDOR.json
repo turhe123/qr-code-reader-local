@@ -1,0 +1,10 @@
+{
+  "name": "jsqr",
+  "version": "1.4.0",
+  "license": "Apache-2.0",
+  "entry": "vendor/jsqr/jsQR.js (classic script, global jsQR)",
+  "sources": {
+    "jsQR.js": "https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.js",
+    "LICENSE": "https://cdn.jsdelivr.net/npm/jsqr@1.4.0/LICENSE"
+  }
+}

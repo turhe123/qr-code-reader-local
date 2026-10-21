@@ -1,0 +1,34 @@
+[
+  {
+    "file": "01-desktop-light.png",
+    "caption": "QR Code Reader from Image in the browser, light theme",
+    "alt": "QR Code Reader from Image at 1440×900, light theme",
+    "width": 1440,
+    "height": 900,
+    "scheme": "light"
+  },
+  {
+    "file": "02-desktop-dark.png",
+    "caption": "QR Code Reader from Image in the browser, dark theme",
+    "alt": "QR Code Reader from Image at 1440×900, dark theme",
+    "width": 1440,
+    "height": 900,
+    "scheme": "dark"
+  },
+  {
+    "file": "03-phone-light.png",
+    "caption": "QR Code Reader from Image on a phone",
+    "alt": "QR Code Reader from Image at 390×844, light theme",
+    "width": 390,
+    "height": 844,
+    "scheme": "light"
+  },
+  {
+    "file": "04-phone-dark.png",
+    "caption": "QR Code Reader from Image on a phone, dark theme",
+    "alt": "QR Code Reader from Image at 390×844, dark theme",
+    "width": 390,
+    "height": 844,
+    "scheme": "dark"
+  }
+]
